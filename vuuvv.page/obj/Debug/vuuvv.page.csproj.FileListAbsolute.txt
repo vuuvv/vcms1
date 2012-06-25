@@ -1,5 +1,0 @@
-f:\code\vcms\vuuvv.page\bin\Debug\vuuvv.page.dll
-f:\code\vcms\vuuvv.page\bin\Debug\vuuvv.page.pdb
-f:\code\vcms\vuuvv.page\obj\Debug\ResolveAssemblyReference.cache
-f:\code\vcms\vuuvv.page\obj\Debug\vuuvv.page.dll
-f:\code\vcms\vuuvv.page\obj\Debug\vuuvv.page.pdb

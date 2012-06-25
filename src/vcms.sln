@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuuvv.page", "vuuvv.page\vu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuuvv.cms", "vuuvv.cms\vuuvv.cms.csproj", "{DD4827B7-C38A-46C4-A0DC-4FB95AD4DC88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vuuvv.test", "vuuvv.test\vuuvv.test.csproj", "{53C4CA31-B862-4EBC-B8B8-F39BD71D1603}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = vcms.vsmdi
@@ -35,6 +37,10 @@ Global
 		{DD4827B7-C38A-46C4-A0DC-4FB95AD4DC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD4827B7-C38A-46C4-A0DC-4FB95AD4DC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD4827B7-C38A-46C4-A0DC-4FB95AD4DC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C4CA31-B862-4EBC-B8B8-F39BD71D1603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C4CA31-B862-4EBC-B8B8-F39BD71D1603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C4CA31-B862-4EBC-B8B8-F39BD71D1603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C4CA31-B862-4EBC-B8B8-F39BD71D1603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

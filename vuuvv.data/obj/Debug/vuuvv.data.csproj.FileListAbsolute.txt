@@ -1,0 +1,5 @@
+f:\code\vcms\vuuvv.data\bin\Debug\vuuvv.data.dll
+f:\code\vcms\vuuvv.data\bin\Debug\vuuvv.data.pdb
+f:\code\vcms\vuuvv.data\obj\Debug\ResolveAssemblyReference.cache
+f:\code\vcms\vuuvv.data\obj\Debug\vuuvv.data.dll
+f:\code\vcms\vuuvv.data\obj\Debug\vuuvv.data.pdb

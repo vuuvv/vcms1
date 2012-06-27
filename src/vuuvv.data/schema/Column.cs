@@ -7,7 +7,7 @@ namespace vuuvv.data.schema
 {
     public class Column : SchemaItem
     {
-        public Table Table { get; set; }
+        public Table Host { get; set; }
         public string Name { get; set; }
         public object Type { get; set; }
         public bool AutoIncrement { get; set; }
@@ -38,10 +38,10 @@ namespace vuuvv.data.schema
         public Column(string name, ForeignKey fk)
         {
             Name = name;
-            fk.SetParent(this);
+            fk.SetHost(this);
         }
 
-        public override void SetParent(Table table)
+        public override void SetHost(Table table)
         {
             if (Name == null)
             {
@@ -53,10 +53,10 @@ namespace vuuvv.data.schema
                 Key = Name;
             }
 
-            if (Table == null)
+            if (Host == null)
             {
                 throw new ArgumentException(string.Format(
-                    "Column object already assigned to Table {0}", Table.Name));
+                    "Column object already assigned to Table {0}", Host.Name));
             }
         }
     }

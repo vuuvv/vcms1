@@ -7,7 +7,7 @@ namespace vuuvv.data.schema
 {
     public class Index : SchemaItem
     {
-        public override void SetParent(Table parent)
+        public override void SetHost(Table parent)
         {
         }
     }

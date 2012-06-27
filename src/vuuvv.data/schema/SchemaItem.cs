@@ -7,15 +7,15 @@ namespace vuuvv.data.schema
 {
     public abstract class SchemaItem
     {
-        public virtual void SetParent(MetaData parent)
+        public virtual void SetHost(MetaData parent)
         {
             throw new NotImplementedException();
         }
-        public virtual void SetParent(Table parent) 
+        public virtual void SetHost(Table parent) 
         {
             throw new NotImplementedException();
         }
-        public virtual void SetParent(Column parent)
+        public virtual void SetHost(Column parent)
         {
             throw new NotImplementedException();
         }
@@ -24,11 +24,11 @@ namespace vuuvv.data.schema
         {
             Type type = parent.GetType();
             if (type == typeof(MetaData))
-                SetParent(parent as MetaData);
+                SetHost(parent as MetaData);
             else if (type == typeof(Table))
-                SetParent(parent as Table);
+                SetHost(parent as Table);
             else if (type == typeof(Column))
-                SetParent(parent as Column);
+                SetHost(parent as Column);
             else
                 throw new ArgumentException("Argument parent's type should be one of [MetaData, Table, Column]");
         }

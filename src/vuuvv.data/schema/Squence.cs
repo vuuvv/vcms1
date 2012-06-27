@@ -7,9 +7,9 @@ namespace vuuvv.data.schema
 {
     public class Squence : SchemaItem
     {
-        public override void SetParent(Column parent)
+        public override void SetHost(Column parent)
         {
-            base.SetParent(parent);
+            base.SetHost(parent);
         }
     }
 }

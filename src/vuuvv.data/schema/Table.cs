@@ -10,7 +10,7 @@ namespace vuuvv.data.schema
     public class Table : SchemaItem
     {
         public string Name { get; set; }
-        public MetaData MetaData { get; set; }
+        public MetaData Host { get; set; }
         private List<Column> _columns = new List<Column>();
         public List<Column> Columns 
         { 
@@ -35,22 +35,22 @@ namespace vuuvv.data.schema
         public Table(string name, MetaData metadata, params SchemaItem[] items)
         {
             Name = name;
-            MetaData = metadata;
+            Host = metadata;
             foreach (var item in items)
             {
-                item.SetParent(this);
+                item.SetHost(this);
             }
         }
 
-        public override void SetParent(MetaData parent)
+        public override void SetHost(MetaData parent)
         {
-            MetaData = parent;
+            Host = parent;
             parent.Tables.Add(Name, this);
         }
 
         public void Append(Column column)
         {
-            column.SetParent(this);
+            column.SetHost(this);
         }
 
         public void Append(Constraint constraint)

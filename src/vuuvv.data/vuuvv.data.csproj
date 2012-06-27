@@ -48,11 +48,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="collections\ColumnCollection.cs" />
+    <Compile Include="collections\IOrderedDictionary.cs" />
+    <Compile Include="collections\OrderedDictionary.cs" />
     <Compile Include="DBHepler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="schema\Column.cs" />
+    <Compile Include="schema\Constraint.cs" />
+    <Compile Include="schema\ForeignKey.cs" />
+    <Compile Include="schema\Index.cs" />
+    <Compile Include="schema\MetaData.cs" />
+    <Compile Include="schema\SchemaItem.cs" />
+    <Compile Include="schema\Squence.cs" />
+    <Compile Include="schema\Table.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

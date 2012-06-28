@@ -52,21 +52,47 @@
     <Compile Include="collections\IOrderedDictionary.cs" />
     <Compile Include="collections\OrderedDictionary.cs" />
     <Compile Include="DBHepler.cs" />
+    <Compile Include="expressions\ddl\CreateConstraint.cs" />
+    <Compile Include="expressions\ddl\CreateIndex.cs" />
+    <Compile Include="expressions\ddl\CreateSchema.cs" />
+    <Compile Include="expressions\ddl\CreateSequence.cs" />
+    <Compile Include="expressions\ddl\CreateTable.cs" />
+    <Compile Include="expressions\ddl\DropConstraint.cs" />
+    <Compile Include="expressions\ddl\DropIndex.cs" />
+    <Compile Include="expressions\ddl\DropSchema.cs" />
+    <Compile Include="expressions\ddl\DropSequence.cs" />
+    <Compile Include="expressions\ddl\DropTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="schema\CheckConstraint.cs" />
     <Compile Include="schema\Column.cs" />
     <Compile Include="schema\Constraint.cs" />
     <Compile Include="schema\ForeignKey.cs" />
+    <Compile Include="schema\ForeignKeyConstraint.cs" />
     <Compile Include="schema\Index.cs" />
     <Compile Include="schema\MetaData.cs" />
+    <Compile Include="schema\PrimaryKeyConstraint.cs" />
     <Compile Include="schema\SchemaItem.cs" />
     <Compile Include="schema\Squence.cs" />
     <Compile Include="schema\Table.cs" />
+    <Compile Include="schema\UniqueConstraint.cs" />
+    <Compile Include="types\Integer.cs" />
+    <Compile Include="types\String.cs" />
+    <Compile Include="visitors\Compiler.cs" />
+    <Compile Include="visitors\DDLCompiler.cs" />
+    <Compile Include="visitors\IVisitable.cs" />
+    <Compile Include="visitors\IVisitor.cs" />
+    <Compile Include="visitors\SQLCompiler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="dialects\" />
+    <Folder Include="expressions\sql\" />
     <Folder Include="utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sqlalchemy.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

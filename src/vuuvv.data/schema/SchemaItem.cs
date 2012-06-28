@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using vuuvv.data.visitors;
+
 namespace vuuvv.data.schema
 {
-    public abstract class SchemaItem
+    public abstract class SchemaItem : IVisitable
     {
         public virtual void SetHost(MetaData parent)
         {

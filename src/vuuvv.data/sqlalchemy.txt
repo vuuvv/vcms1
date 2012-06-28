@@ -1,0 +1,84 @@
+﻿Visitable:
+	SchemaItem
+		Table(TableClause)
+		Column(ColumnClause)
+		ForeignKey
+		DefaultGenerator
+			ColumnDefault
+			Sequence
+		Constraint
+		ColumnCollectionConstraint
+		CheckConstraint
+		ForeignKeyConstraint
+		PrimaryKeyConstraint
+		UniqueConstraint
+		Index
+		MetaData
+	ClauseElement
+		DDLElement
+			DDL
+			_CreateDropBase
+				CreateSchema
+				DropSchema
+				CreateTable
+				DropTable
+				CreateSequence
+				DropSequence
+				CreateIndex
+				DropIndex
+				AddConstraint
+				DropConstraint
+		ColumnElement
+			_BindParamClause
+			_Null
+			_False
+			_True
+			_Case
+			FunctionElement(FromClause)
+				Function
+			_Cast
+			_Extract
+			_UnaryExpression
+				_Exists
+			_BinaryExpression
+			_Grouping
+				_ScalarSelect
+			_Over
+			_Label
+			ColumnCaluse
+		Selectable
+			FromClause
+				Join
+				Alias
+				_FromGrouping
+				TabelClause
+				_SelectBase
+					CompoundSelect
+					Select
+		_TypeClause
+		_TextClause 
+		ClauseList
+			BooleanClauseList(ColumnElement)
+			_Tuple(ColumnElement)
+		UpdateBase
+			ValueBase
+				Insert
+				Update
+			Delete
+		_IndentifiedClause
+			SavePointClause
+			RollbackToSavepointClause
+			ReleaseSavepointClause
+
+
+ClauseVisitor
+	SchemaVisitor
+		DDLBase
+			SchemaGenerator
+			SchemaDropper
+
+其实Compiled也是类似于Visitor
+
+Compiled
+	SQLCompiler
+	DDLCompiler

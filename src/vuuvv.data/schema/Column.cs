@@ -53,11 +53,25 @@ namespace vuuvv.data.schema
                 Key = Name;
             }
 
-            if (Host == null)
+            if (Host != null)
             {
                 throw new ArgumentException(string.Format(
                     "Column object already assigned to Table {0}", Host.Name));
             }
+
+            if (table.Columns.ContainsKey(Key))
+            {
+                // TODO: remove the existing column and other things depent it
+                throw new ArgumentException(string.Format("Column '{0}' existed in table '{1}",
+                    Key, table.Name));
+            }
+
+            table.Columns[Key] = this;
+
+            Host = table;
+
+            // TODO: handle the Column is primary key
+            // TODO: handle the Column indexed or unique
         }
     }
 }

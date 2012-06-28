@@ -11,8 +11,8 @@ namespace vuuvv.data.schema
     {
         public string Name { get; set; }
         public MetaData Host { get; set; }
-        private List<Column> _columns = new List<Column>();
-        public List<Column> Columns 
+        private ColumnCollection _columns = new ColumnCollection();
+        public ColumnCollection Columns 
         { 
             get { return _columns; } 
         }
